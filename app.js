@@ -49,20 +49,58 @@
 // }
 
 
-const getData = async () =>{
+// const getData = async () =>{
     
-    try{
-        const data = await fetch("https://fakestoreapi.com/products12345").then
-        ((res) => 
-        res.json()
-        );
-        console.log("data",data);
-    }catch(error){
-        alert("Api error")
+//     try{
+//         const data = await fetch("https://fakestoreapi.com/products12345").then
+//         ((res) => 
+//         res.json()
+//         );
+//         console.log("data",data);
+//     }catch(error){
+//         alert("Api error")
+//     }
+// };
+
+
+/////////////////////////// Constructor
+
+// function Std(name,age){
+//     this.stdName = name;
+//     this.stdAge = age;
+// }
+
+
+
+
+/////////////////////////   classes
+
+
+
+// class Std {
+//     constructor(name,age){
+//         this.stdName = name;
+//         this.stdAge = age;
+//     }
+// }
+
+// const Std1 = new Std("Saddique",20);
+
+
+// console.log("Std1", Std1);
+
+///////////////////////////////////// Method in class
+
+class Std {
+    constructor(name,age){
+        this.stdName = name;
+        this.stdAge = age;
     }
-};
-
-
-
-
+    getName(){
+        return this.getName;
+    }
+}
  
+const std1 = new Std("saddique",20);
+console.log(std1,"std1");
+std2.getName();
