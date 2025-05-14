@@ -148,33 +148,87 @@
 // splice 
 
 
-let cars = ["toyota","farari","lambergani","audi"];
-cars.shift();
-console.log(cars);
+// let cars = ["toyota","farari","lambergani","audi"];
+// cars.shift();
+// console.log(cars);
 
-cars.unshift("truck");
-console.log(cars);
-cars.pop();
+// cars.unshift("truck");
+// console.log(cars);
+// cars.pop();
 
-cars.push("BMW","XUE");
-console.log(cars);
+// cars.push("BMW","XUE");
+// console.log(cars);
 
-// cars.splice(2,3);
+// // cars.splice(2,3);
+// // console.log(cars);
+
+
+// cars.splice(0,0,"quniqi","Utong","bike","125");
+// console.log(cars);
+
+// cars.splice(3,0,"marcedies");
 // console.log(cars);
 
 
-cars.splice(0,0,"quniqi","Utong","bike","125");
-console.log(cars);
+// cars.splice(3,1,"gewon");
+// console.log(cars);
 
-cars.splice(3,0,"marcedies");
-console.log(cars);
+// cars.sort();
+// console.log(cars);
 
-
-cars.splice(3,1,"gewon");
-console.log(cars);
-
-cars.sort();
-console.log(cars);
+//                loop;
+// print odd number
 
 
+// console.log("fordward");
 
+// for(let i=1; i<=15;i=i+2){
+//     console.log(i);
+    
+// }
+
+// console.log("backward");
+
+// for(let i=15; i>=1; i=i-2){
+//     console.log(i);
+// }
+
+// // even number 
+
+// console.log("Even Start");
+
+
+// for(let i=2;i<=10;i=i+2){
+//     console.log(i);
+    
+// }
+
+// Multiplaiction
+console.log("Multipliction");
+
+// for(let i=5;i<=50;i=i+5){
+// console.log(i);
+
+// }
+
+
+// let n = prompt("Write your number");
+//  n = parseInt(n)
+// for(let i=n; i<=n*10; i=i+n){
+//     console.log(i);
+    
+
+// }
+
+
+
+// nested loop
+
+for(let i=1;i<=3;i++){
+    console.log(`Value of ${i}`);
+    
+    for(let j=1;j<=3;j++){
+        console.log(j);
+        
+    }
+}
