@@ -224,11 +224,30 @@ console.log("Multipliction");
 
 // nested loop
 
-for(let i=1;i<=3;i++){
-    console.log(`Value of ${i}`);
+// for(let i=1;i<=3;i++){
+//     console.log(`Value of ${i}`);
     
-    for(let j=1;j<=3;j++){
-        console.log(j);
+//     for(let j=1;j<=3;j++){
+//         console.log(j);
         
-    }
+//     }
+// }
+
+
+// for and while loop
+
+
+const favMovie = "amirkhan";
+
+let guess = prompt("Guess my fravite movie");
+
+while((guess != favMovie)&&(guess != "quite")){
+ prompt("wrong guess. Please try again");
+}
+
+if(guess==favMovie){
+    console.log("Congrate!!!");
+}else{
+    console.log("You have quite");
+    
 }
