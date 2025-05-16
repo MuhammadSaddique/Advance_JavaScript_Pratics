@@ -285,57 +285,109 @@
 // functions
 
 
-function rollDice(){
-    let rand = Math.floor(Math.random()*6)+1;
-    console.log(rand);    
+// function rollDice(){
+//     let rand = Math.floor(Math.random()*6)+1;
+//     console.log(rand);    
+// }
+// rollDice()
+// rollDice()
+// rollDice()
+// rollDice()
+// rollDice()
+// rollDice()
+// rollDice()
+// rollDice()
+
+
+// function printName(name){
+//     console.log(name);
+    
+// }
+// printName("saddique")
+// printName("Qadoos")
+
+
+
+
+// function calAvg(a,b,c){
+//     avg = (a+b+c)/3
+//     console.log(avg);
+    
+// }
+// calAvg(10,20,34);
+
+
+// function getSum(n){
+//     let sum = 0;
+//     for(let i=1;i<=n; i++){
+//         sum +=i;
+//     }
+//     return sum
+// }
+// let value = getSum(4);
+// console.log(value);
+
+
+
+// let arr = ["hi","bye","hu","he"];
+
+// function concate(arr){
+//     let result = "";
+//     for(let i=0; i< arr.lenght;i++){
+//         result += arr[i];
+//     }
+//     return result;
+// }
+// console.log(concate(arr));
+
+
+// High order functions
+
+
+
+// function multipleGreet(func,n){
+//     for(let i=0;i<=n; i++){
+//         func()
+//     }
+// }
+
+// let greet = function(){
+//     console.log("Hi");
+// }
+
+// // greet();
+// multipleGreet(greet,4);
+
+
+
+let odd = function(n){
+    console.log(!(n % 2 == 0));
 }
-rollDice()
-rollDice()
-rollDice()
-rollDice()
-rollDice()
-rollDice()
-rollDice()
-rollDice()
+let even = function(n){
+    console.log((n % 2 == 0));
+}
+odd(2);
+odd(1);
+even(2)
+even(5)
 
 
-function printName(name){
-    console.log(name);
+function oddOrevenFactory(request){
+    if(request == "odd"){
+        let odd = function(n){
+    console.log(!(n % 2 == 0));
+        }
+}else if(request == "even"){
+    let even = function(n){
+    console.log((n % 2 == 0));
+}
+}else{
+    console.log("wrong request!!!");
     
 }
-printName("saddique")
-printName("Qadoos")
-
-
-
-
-function calAvg(a,b,c){
-    avg = (a+b+c)/3
-    console.log(avg);
-    
-}
-calAvg(10,20,34);
-
-
-function getSum(n){
-    let sum = 0;
-    for(let i=1;i<=n; i++){
-        sum +=i;
     }
-    return sum
-}
-let value = getSum(4);
-console.log(value);
 
 
+let request = "odd";
 
-let arr = ["hi","bye","hu","he"];
-
-function concate(arr){
-    let result = "";
-    for(let i=0; i< arr.lenght;i++){
-        result += arr[i];
-    }
-    return result;
-}
-console.log(concate(arr));
+oddOrevenFactory()
