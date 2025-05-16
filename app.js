@@ -204,7 +204,7 @@
 // }
 
 // Multiplaiction
-console.log("Multipliction");
+// console.log("Multipliction");
 
 // for(let i=5;i<=50;i=i+5){
 // console.log(i);
@@ -237,17 +237,105 @@ console.log("Multipliction");
 // for and while loop
 
 
-const favMovie = "amirkhan";
+// const favMovie = "amirkhan";
 
-let guess = prompt("Guess my fravite movie");
+// let guess = prompt("Guess my fravite movie");
 
-while((guess != favMovie)&&(guess != "quite")){
- prompt("wrong guess. Please try again");
+// while((guess != favMovie)&&(guess != "quite")){
+//  prompt("wrong guess. Please try again");
+// }
+
+// if(guess==favMovie){
+//     console.log("Congrate!!!");
+// }else{
+//     console.log("You have quite");
+    
+// }
+
+// todo app
+
+
+// let todo = [];
+
+//  let req = prompt("Please enter your request!")
+
+//  while(true){
+//     if(req =="quite"){
+//         console.log("quitting app");
+//         break
+//     }
+//     if(req == "list"){
+//         console.log("--------------------");
+        
+//         for(task of todo){
+//             console.log(task);
+//         }
+//         console.log("--------------------");
+//     }else if(req == "add"){
+//         let task = prompt("Please enter the task you want to add!");
+//         todo.push(task);
+//         console.log("task add");
+        
+//     }
+//     req = prompt("Please enter your request!")
+//  }
+
+
+
+// functions
+
+
+function rollDice(){
+    let rand = Math.floor(Math.random()*6)+1;
+    console.log(rand);    
 }
+rollDice()
+rollDice()
+rollDice()
+rollDice()
+rollDice()
+rollDice()
+rollDice()
+rollDice()
 
-if(guess==favMovie){
-    console.log("Congrate!!!");
-}else{
-    console.log("You have quite");
+
+function printName(name){
+    console.log(name);
     
 }
+printName("saddique")
+printName("Qadoos")
+
+
+
+
+function calAvg(a,b,c){
+    avg = (a+b+c)/3
+    console.log(avg);
+    
+}
+calAvg(10,20,34);
+
+
+function getSum(n){
+    let sum = 0;
+    for(let i=1;i<=n; i++){
+        sum +=i;
+    }
+    return sum
+}
+let value = getSum(4);
+console.log(value);
+
+
+
+let arr = ["hi","bye","hu","he"];
+
+function concate(arr){
+    let result = "";
+    for(let i=0; i< arr.lenght;i++){
+        result += arr[i];
+    }
+    return result;
+}
+console.log(concate(arr));
