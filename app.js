@@ -360,34 +360,74 @@
 
 
 
-let odd = function(n){
-    console.log(!(n % 2 == 0));
-}
-let even = function(n){
-    console.log((n % 2 == 0));
-}
-odd(2);
-odd(1);
-even(2)
-even(5)
+// let odd = function(n){
+//     console.log(!(n % 2 == 0));
+// }
+// let even = function(n){
+//     console.log((n % 2 == 0));
+// }
+// odd(2);
+// odd(1);
+// even(2)
+// even(5)
 
 
-function oddOrevenFactory(request){
-    if(request == "odd"){
-        let odd = function(n){
-    console.log(!(n % 2 == 0));
-        }
-}else if(request == "even"){
-    let even = function(n){
-    console.log((n % 2 == 0));
-}
-}else{
-    console.log("wrong request!!!");
+// function oddOrevenFactory(request){
+//     if(request == "odd"){
+//         let odd = function(n){
+//     console.log(!(n % 2 == 0));
+//         }
+// }else if(request == "even"){
+//     let even = function(n){
+//     console.log((n % 2 == 0));
+// }
+// }else{
+//     console.log("wrong request!!!");
     
-}
+// }
+//     }
+
+
+// let request = "odd";
+
+// oddOrevenFactory()
+
+
+// this key word
+
+
+const student = {
+    name : "saddique",
+    age: 22,
+    eng: 97,
+    phy: 95,
+    math: 99,
+     getAvg(){
+        
+
     }
+}
 
 
-let request = "odd";
 
-oddOrevenFactory()
+// try and catch
+
+
+console.log("Hello");
+console.log("Hello");
+console.log("Hello");
+
+try{
+    console.log(a);
+
+}catch(error){
+console.log("thre is an error in which a is not define");
+
+}
+ 
+
+console.log("Hello2");
+console.log("Hello2");
+console.log("Hello2");
+console.log("Hello2");
+console.log("Hello2");
