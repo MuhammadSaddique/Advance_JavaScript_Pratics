@@ -477,11 +477,55 @@
 
 
 
-let id = setInterval(()=>{
-console.log("Hello");
-},2000);
+// let id = setInterval(()=>{
+// console.log("Hello");
+// },2000);
 
 
-setTimeout(()=>{
-    clearInterval(id)
-},10000)
+// setTimeout(()=>{
+//     clearInterval(id);
+//     console.log("clear interval ran!!!");
+    
+// },10000)
+
+
+
+
+let arr = [1,2,3,4,5];
+
+
+arr.forEach(function(el){
+    console.log(el);
+    
+})
+
+
+
+let print = function(el){
+    console.log(el);
+}
+arr.forEach(print);
+
+
+let arrr = [1,2,3,4,5,6];
+
+let double = arrr.map((el)=>{
+    return el*el;;
+});
+console.log(double);
+
+
+
+let nums = [1,2,3,4,5,6,7,8,9,10,11,22,24,56];
+
+let even = nums.filter((el)=>{
+    return el % 2 == 0;
+});
+console.log("Even ",even);
+
+
+
+let odd = nums.filter((el)=>{
+    return el % 2 !== 0;
+});
+console.log("Odd",odd);
