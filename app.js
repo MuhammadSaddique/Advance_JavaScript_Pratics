@@ -450,3 +450,26 @@ const cube = (n)=>{
 
 let c = cube(6);
 console.log(c);
+
+
+
+const pow = (a,b) =>{
+    return a**b;
+}
+let p = pow(4,2);
+console.log(p);
+
+
+console.log("Hi it's starting!");
+setTimeout(()=>{
+    console.log("it is inside the set time out!!!");
+    
+},4000);
+
+console.log("Hi it's the end!!!");
+
+
+setInterval(()=>{
+    console.log("it is set intervel!!!");
+    
+},5000);
