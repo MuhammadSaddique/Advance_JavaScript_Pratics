@@ -396,38 +396,57 @@
 // this key word
 
 
-const student = {
-    name : "saddique",
-    age: 22,
-    eng: 97,
-    phy: 95,
-    math: 99,
-     getAvg(){
+// const student = {
+//     name : "saddique",
+//     age: 22,
+//     eng: 97,
+//     phy: 95,
+//     math: 99,
+//      getAvg(){
         
 
-    }
-}
+//     }
+// }
 
 
 
-// try and catch
+// // try and catch
 
 
-console.log("Hello");
-console.log("Hello");
-console.log("Hello");
+// console.log("Hello");
+// console.log("Hello");
+// console.log("Hello");
 
-try{
-    console.log(a);
+// try{
+//     console.log(a);
 
-}catch(error){
-console.log("thre is an error in which a is not define");
+// }catch(error){
+// console.log("thre is an error in which a is not define");
 
-}
+// }
  
 
-console.log("Hello2");
-console.log("Hello2");
-console.log("Hello2");
-console.log("Hello2");
-console.log("Hello2");
+// console.log("Hello2");
+// console.log("Hello2");
+// console.log("Hello2");
+// console.log("Hello2");
+// console.log("Hello2");
+
+
+
+//                                         arow functions
+
+
+const sum = (a,b)=>{
+ console.log(a+b);
+ 
+}
+sum(4,5)
+
+
+const cube = (n)=>{
+    return n*n*n
+}
+
+let c = cube(6);
+console.log(c);
