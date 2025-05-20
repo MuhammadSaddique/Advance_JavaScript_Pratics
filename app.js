@@ -437,39 +437,51 @@
 //                                         arow functions
 
 
-const sum = (a,b)=>{
- console.log(a+b);
+// const sum = (a,b)=>{
+//  console.log(a+b);
  
-}
-sum(4,5)
+// }
+// sum(4,5)
 
 
-const cube = (n)=>{
-    return n*n*n
-}
+// const cube = (n)=>{
+//     return n*n*n
+// }
 
-let c = cube(6);
-console.log(c);
-
-
-
-const pow = (a,b) =>{
-    return a**b;
-}
-let p = pow(4,2);
-console.log(p);
+// let c = cube(6);
+// console.log(c);
 
 
-console.log("Hi it's starting!");
+
+// const pow = (a,b) =>{
+//     return a**b;
+// }
+// let p = pow(4,2);
+// console.log(p);
+
+
+// console.log("Hi it's starting!");
+// setTimeout(()=>{
+//     console.log("it is inside the set time out!!!");
+    
+// },4000);
+
+// console.log("Hi it's the end!!!");
+
+
+// setInterval(()=>{
+//     console.log("it is set intervel!!!");
+    
+// },5000);
+
+
+
+
+let id = setInterval(()=>{
+console.log("Hello");
+},2000);
+
+
 setTimeout(()=>{
-    console.log("it is inside the set time out!!!");
-    
-},4000);
-
-console.log("Hi it's the end!!!");
-
-
-setInterval(()=>{
-    console.log("it is set intervel!!!");
-    
-},5000);
+    clearInterval(id)
+},10000)
