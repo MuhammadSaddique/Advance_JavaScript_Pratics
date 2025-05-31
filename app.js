@@ -491,41 +491,71 @@
 
 
 
-let arr = [1,2,3,4,5];
+// let arr = [1,2,3,4,5];
 
 
-arr.forEach(function(el){
-    console.log(el);
+// arr.forEach(function(el){
+//     console.log(el);
     
-})
+// })
 
 
 
-let print = function(el){
-    console.log(el);
+// let print = function(el){
+//     console.log(el);
+// }
+// arr.forEach(print);
+
+
+// let arrr = [1,2,3,4,5,6];
+
+// let double = arrr.map((el)=>{
+//     return el*el;;
+// });
+// console.log(double);
+
+
+
+// let nums = [1,2,3,4,5,6,7,8,9,10,11,22,24,56];
+
+// let even = nums.filter((el)=>{
+//     return el % 2 == 0;
+// });
+// console.log("Even ",even);
+
+
+
+// let odd = nums.filter((el)=>{
+//     return el % 2 !== 0;
+// });
+// console.log("Odd",odd);
+
+
+
+//                                                spread operter
+
+// let arr = [1,2,3,4,5]
+
+// let newArr = [...arr];
+// console.log(newArr);
+
+
+// let even = [2,4,6,8,10,12,14,16];
+
+// let odd = [1,3,5,7,9,11,13,15,17]
+
+// let both = [...even,...odd];
+// console.log(both);
+
+
+// let name = [..."JavaScript"]
+// console.log(name);
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+
+arr[5] = null ;
+
+for(let i=0;i<arr.length; i++){
+    console.log(`arr : ${i}`,[i]);
+    
 }
-arr.forEach(print);
-
-
-let arrr = [1,2,3,4,5,6];
-
-let double = arrr.map((el)=>{
-    return el*el;;
-});
-console.log(double);
-
-
-
-let nums = [1,2,3,4,5,6,7,8,9,10,11,22,24,56];
-
-let even = nums.filter((el)=>{
-    return el % 2 == 0;
-});
-console.log("Even ",even);
-
-
-
-let odd = nums.filter((el)=>{
-    return el % 2 !== 0;
-});
-console.log("Odd",odd);
