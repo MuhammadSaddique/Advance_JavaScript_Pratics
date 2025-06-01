@@ -551,11 +551,39 @@
 // let name = [..."JavaScript"]
 // console.log(name);
 
-let arr = [1,2,3,4,5,6,7,8,9,10];
+// let arr = [1,2,3,4,5,6,7,8,9,10];
 
-arr[5] = null ;
+// arr[5] = null ;
 
-for(let i=0;i<arr.length; i++){
-    console.log(`arr : ${i}`,[i]);
+// for(let i=0;i<arr.length; i++){
+//     console.log(`arr : ${i}`,[i]);
     
+// }
+
+
+// Generate a random color 
+
+
+
+let btn = document.querySelector("button");
+
+btn.addEventListener("click",function(){
+   let h1 = document.querySelector("h1");
+    let randomColor = getRandomColor()
+   h1.innerText = randomColor;
+
+   let div = document.querySelector("div");
+   div.style.background = randomColor;
+
+   
+    
+})
+
+function getRandomColor(){
+    let red = Math.floor(Math.random() *255);
+    let green = Math.floor(Math.random() *255);
+    let blue = Math.floor(Math.random() *255);
+
+    let color = `rgb(${red},${green},${blue})`;
+    return color;
 }
